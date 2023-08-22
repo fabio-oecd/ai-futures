@@ -1,0 +1,80 @@
+body, #infobligChart {
+  width: 100%;
+  height: 100%;
+}
+
+.infoblig, .infoblig svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.infoblig .hovered {
+  fill: #434343b5 !important;
+}
+
+.infoblig .tooltip {
+  text-align: center;
+  pointer-events: none;
+  background: #b0c4de;
+  border: 0;
+  border-radius: 8px;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  font: 12px sans-serif;
+  position: absolute;
+}
+
+.infoblig .sidebar {
+  box-sizing: border-box;
+  z-index: 1;
+  background-color: #f8f9fa;
+  width: 500px;
+  height: 100%;
+  padding: 1em;
+  transition: left .3s ease-in-out;
+  position: absolute;
+  left: -450px;
+  box-shadow: inset -1px 0 #ddd;
+}
+
+.infoblig .sidebar.active {
+  left: 0;
+}
+
+.infoblig .circularButton {
+  color: #fff;
+  cursor: pointer;
+  background-color: #bbb;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  padding-bottom: 8px;
+  font-size: 24px;
+  position: absolute;
+  top: 40%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 4px #0003;
+}
+
+.infoblig .circularButton:hover {
+  color: #828282;
+}
+
+.infoblig .zoomSliderBox {
+  z-index: 1;
+  appearance: auto;
+  background: #f8f9fa;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  box-shadow: inset 1px -1px #ddd;
+}
+
+/*# sourceMappingURL=index.61d3354a.css.map */

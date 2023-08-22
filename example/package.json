@@ -1,0 +1,32 @@
+{
+  "name": "@peren/infoblig-demo",
+  "homepage": ".",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "if [ -z \"$PUBLIC_URL\" ]; then parcel ./src/index.html; else parcel ./src/index.html  --public-url $PUBLIC_URL; fi",
+    "reporter": "npx webpack --profile --json > stats.json && npx webpack-bundle-analyzer ./stats.json",
+    "test": "node ../node_modules/react-scripts/bin/react-scripts.js test",
+    "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
+  },
+  "dependencies": {
+    "react": "file:../node_modules/react",
+    "react-dom": "file:../node_modules/react-dom"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
+    "@peren/infoblig": "file:..",
+    "buffer": "^5.7.1",
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "engines" : { 
+    "node" : ">=14.0.0 <17.0.0"
+  }
+}

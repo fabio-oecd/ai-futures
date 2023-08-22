@@ -1,0 +1,76 @@
+.infoblig, .infoblig svg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.infoblig .hovered {
+  fill: #434343b5 !important;
+}
+
+.infoblig .tooltip {
+  text-align: center;
+  width: auto;
+  height: auto;
+  pointer-events: none;
+  background: #b0c4de;
+  border: 0;
+  border-radius: 8px;
+  padding: 5px;
+  font: 12px sans-serif;
+  position: absolute;
+}
+
+.infoblig .sidebar {
+  height: 100%;
+  width: 500px;
+  box-sizing: border-box;
+  z-index: 1;
+  background-color: #f8f9fa;
+  padding: 1em;
+  transition: left .3s ease-in-out;
+  position: absolute;
+  left: -450px;
+  box-shadow: inset -1px 0 #ddd;
+}
+
+.infoblig .sidebar.active {
+  left: 0;
+}
+
+.infoblig .circularButton {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #bbb;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  padding-bottom: 8px;
+  font-size: 24px;
+  position: absolute;
+  top: 40%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 4px #0003;
+}
+
+.infoblig .circularButton:hover {
+  color: #828282;
+}
+
+.infoblig .zoomSliderBox {
+  z-index: 1;
+  -webkit-appearance: auto;
+  appearance: auto;
+  background: #f8f9fa;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  box-shadow: inset 1px -1px #ddd;
+}
+
+/*# sourceMappingURL=index.css.map */
